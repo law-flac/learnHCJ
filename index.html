@@ -54,8 +54,12 @@ function update(bgColor, textColor) {
     const button = document.querySelector('button');
     button.onclick = function(){
         let company = prompt('Which company?');
-        (company == 'netscape') ?
-        alert('right!') : alert('wrong!');
+        
+        if(company == 'netscape'){
+            alert('right!');
+        } else {
+            alert('wrong!');
+        }
     }
     </script>
 </body>
