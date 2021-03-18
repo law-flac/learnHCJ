@@ -53,12 +53,12 @@ function update(bgColor, textColor) {
 //if
     const button = document.querySelector('button');
     button.onclick = function(){
-        let company = prompt('Which company?');
-        
-        if(company == 'netscape'){
+        let name = prompt('What is the official name of JavaScript?', '');
+
+        if(name == 'ECMAScript'){
             alert('right!');
         } else {
-            alert('wrong!');
+            alert('u dont know "ECMAScript?"');
         }
     }
     </script>
