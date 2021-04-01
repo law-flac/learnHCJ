@@ -8,11 +8,13 @@
 <body>
 
 <script>
-    function showMessage(text){
-        text = text || 'empty';
-        text = 'empty message';
+    // if there's no "count" parameter, show "unknown"
+    function showCount(count){
+        alert(count ?? 'unknown')
     }
-    showMessage();
+    showCount(0);
+    showCount(null);
+    showCount();
 
 </script>
 </body>
