@@ -8,10 +8,11 @@
 <body>
 
 <script>
-    function showMessage(from, text = "no text given"){
-        alert(from + ': ' + text);
+    function showMessage(text){
+        if(text === undefined)
+        text = 'empty message';
     }
-    showMessage("Ann");
+    showMessage();
 
 </script>
 </body>
