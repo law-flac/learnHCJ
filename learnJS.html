@@ -9,7 +9,7 @@
 
 <script>
     function showMessage(text){
-        if(text === undefined)
+        text = text || 'empty';
         text = 'empty message';
     }
     showMessage();
