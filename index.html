@@ -15,6 +15,7 @@
         <option value="psychedelic">psychedelic</option>
     </select>
     <button>clickMe</button>
+    <a href="learnJS.html">learnJS</a>
     <h1>Yahallost</h1>
     <script>
 
@@ -50,35 +51,41 @@ function update(bgColor, textColor) {
  html.style.backgroundColor = bgColor;
  html.style.color = textColor;
 }
-/*
-Grade of 90 and above is an A
-Grade of 80 to 89 is a B
-Grade of 70 to 79 is a C
-Grade of 60 to 69 is a D
-Grade of 59 or below is an F
-*/
+
     const button = document.querySelector('button');
     button.onclick = function(){
-        const grade = 32;
-
-        switch (true){
-            case grade >= 90:
-                console.log('A');
-                break;
-            case grade >= 80:
-                console.log('B');
-                break;
-            case grade >= 70:
-                console.log('C');
-                break;
-            case grade >= 60:
-                console.log('D');
-                break;
-            default:
-                console.log('F');
-        }
-
-    }   
+    //const month = prompt('Month:');
+    let month = new Date().getMonth();
+    
+switch (month) {
+    // January, February, March
+    case 0:
+    case 1:
+    case 2:
+        console.log("Winter");
+        break;
+    // April, May, June
+    case 3:
+    case 4:
+    case 5:
+        console.log("Spring");
+        break;
+    // July, August, September
+    case 6:
+    case 7:
+    case 8:
+        console.log("Summer");
+        break;
+    // October, November, December
+    case 9:
+    case 10:
+    case 11:
+        console.log("Autumn");
+        break;
+    default:
+        console.log("Something went wrong.");
+}
+  
     </script>
 </body>
 </html>
