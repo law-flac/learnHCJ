@@ -2,60 +2,19 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Functions, JS.info</title>
+  <title>Function Expressions, JS.info</title>
 
 </head>
 <body>
 
 <script>
-    function pow(x, n){
-        let result = x;
-
-        for(let i = 1; i < n; i++){
-            result *=x;
-        }
-        return result;
+//Function Expressions
+    let sayHi = function(){
+        alert('Hi!');
     }
-    let x = prompt('x?', '');
-    let n = prompt('n?', '');
+    alert(sayHi);//outputs the syntax
+    alert(sayHi());//outputs Hi!
 
-    if(n<1){
-        alert(`power ${n} is not supported, use a positive integer`);
-    } else {
-        alert(pow(x,n));
-    }
-
-/*    function checkAge(age){
-        if(age>18){
-            return true;
-        } 
-            return confirm('Do you have permission from your parents');
-        }
-*/   
-    function checkAge(age){
-        return (age>18) ? true : confirm('Did parents allow you?');
-    }
-    let age = prompt('How old are you?', 18);
-
-    if (checkAge(age)){
-        alert('Access granted');
-    } else {
-        alert('Access denied');
-    }
-
-// return w/o value to exit immediately
-    function showMovie(age){
-        if(!checkAge(age)){
-            return;
-        }
-        alert('Showing you the movie');
-    }
-    
-    function doNothing(){
-        return;
-    } alert(doNothing() === undefined);
-
-    
 </script>
 </body>
 </html>
